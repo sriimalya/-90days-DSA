@@ -19,7 +19,7 @@ int main(){
     cin>>n;
     int x,y;
     cout<<"Enter Pair Elements:"<<endl;
-        for (int i = 0; i < v.size(); ++i)
+        for (int i = 0; i < n; ++i)
     {
         cin>>x>>y;
         v.push_back({x,y});

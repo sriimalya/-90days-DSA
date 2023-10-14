@@ -15,7 +15,7 @@ void printArrVector(vector<int> &v)
     cout << "size of vector= " << v.size() << endl; // size()->O(1)
     for (int i = 0; i < v.size(); ++i)
     {
-        cout << v[i]<<endl;
+        cout << v[i]<<" "<<endl;
     }
     cout << endl;
 }

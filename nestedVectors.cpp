@@ -79,6 +79,11 @@ int main()
         }
         v2.push_back(temp);
     }
-
+    for (int i = 0; i < v2.size(); ++i)
+    {
+        cout << "Elements at index "
+             << i << ": ";
+        printArrVector(v2[i]);
+    }
 
 }

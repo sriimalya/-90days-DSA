@@ -14,17 +14,16 @@ void printArrVector(vector<int> &v)
 {
     for (int i = 0; i < v.size(); ++i)
     {
-        cout << v[i] << " ";
+       cout<<v[i]<<endl;
     }
 }
-void arrayVector()
+void arrayVector(vector<int> V[5])
 {
-    vector<int> V[5]; // array of 10 vectors
     for (int i = 0; i < 5; ++i)
     {
         int size;
         cout << endl
-             << "Enter size for vector " << i << endl;
+             << "Enter size for vector " << i <<": ";
         cin >> size;
         cout << "Enter elements: ";
 
@@ -35,18 +34,14 @@ void arrayVector()
             V[i].push_back(x);
         }
     }
-    cout << "The elements are: ";
-    for (int k = 0; k < 5; ++k)
-    {
-        printArrVector(V[k]);
-    }
 }
 int main()
 {
 
     vector<pair<int, int>> v = {{1, 2}, {3, 4}, {4, 5}}; // vector of pair, instead of pair array
     printVector(v);
-    vector<pair<int, int>> v1;
+
+    vector<pair<int, int>> v1; // pair vectors
     int n;
     cout << "Enter size: ";
     cin >> n;
@@ -58,5 +53,13 @@ int main()
         v1.push_back({x, y});
     }
     printVector(v1);
-    arrayVector();
+
+    vector<int> V[5]; // array of 10 vectors
+    arrayVector(V);
+    for (int i = 0; i < 5; ++i)
+    {
+        cout << "Elements at index "
+             << i << ": ";
+        printArrVector(V[i]);
+    }
 }

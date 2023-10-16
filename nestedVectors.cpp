@@ -63,4 +63,22 @@ int main()
              << i << ": ";
         printArrVector(V[i]);
     }
+
+    //vector of vector
+    vector<vector< int>> v2; // vector of vector
+    int N;
+    cin>>N;
+    vector<int>temp;
+    for (int i=0;i<N;++i){
+        int a;
+        cin>>a;
+    for (int j=0;j<a;++j){
+        int y;
+        cin>>y;
+        temp.push_back(y);
+        }
+        v2.push_back(temp);
+    }
+
+
 }

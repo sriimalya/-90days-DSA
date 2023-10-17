@@ -13,9 +13,16 @@ int main()
     vector<int>::iterator it = v.begin(); // begin points the first loc, end points to next of last element
     cout << *it << " " << *(it + 1) << endl;
 
-    //some containers in stl do not have indexes, hence their values can be accessed by looping iterators from begin to end
+    // some containers in stl do not have indexes, hence their values can be accessed by looping iterators from begin to end
     for (it = v.begin(); it != v.end(); ++it)
     {
-        cout<<*it<<endl;
+        cout << *it << " ";
+    }
+    cout << endl;
+    vector<pair<int, int>> v_p = {{1, 2}, {3, 4}, {5, 6}};
+    vector<pair<int, int>> :: iterator it;
+    for (it = v_p.begin(); it ! < v_p.end(); ++it)
+    {
+        cout<<(*it).first;
     }
 }

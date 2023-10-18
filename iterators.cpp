@@ -20,9 +20,15 @@ int main()
     }
     cout << endl;
     vector<pair<int, int>> v_p = {{1, 2}, {3, 4}, {5, 6}};
-    vector<pair<int, int>> :: iterator it1;
+    vector<pair<int, int>>::iterator it1;
     for (it1 = v_p.begin(); it1 != v_p.end(); ++it1)
     {
-        cout<<(*it1).first;
+        cout << (*it1).first << " " << (*it1).second<<"  ";
+    }
+    cout << endl;
+    cout << "Another method:" << endl;
+    for (it1 = v_p.begin(); it1 != v_p.end(); ++it1)
+    {
+        cout << it1->first << " " << it1->second<<"  ";
     }
 }

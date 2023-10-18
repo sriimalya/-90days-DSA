@@ -20,9 +20,9 @@ int main()
     }
     cout << endl;
     vector<pair<int, int>> v_p = {{1, 2}, {3, 4}, {5, 6}};
-    vector<pair<int, int>> :: iterator it;
-    for (it = v_p.begin(); it ! < v_p.end(); ++it)
+    vector<pair<int, int>> :: iterator it1;
+    for (it1 = v_p.begin(); it1 != v_p.end(); ++it1)
     {
-        cout<<(*it).first;
+        cout<<(*it1).first;
     }
 }

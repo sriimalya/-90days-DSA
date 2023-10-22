@@ -1,4 +1,5 @@
-// Auto and Range based loops | CP COURSE | EP 24
+// Auto and Range based loops 
+// auto keyword assigns the datatype according to the value of data given
 #include<bits/stdc++.h>
 using namespace std;
 #define pb push_back
@@ -52,5 +53,6 @@ int _2()
 }
 int main()
 {
+	_1();
 	_2();
 }

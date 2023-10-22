@@ -34,4 +34,5 @@ int main()
     v.pop_back(); // pops last element; O(1)
 
     vector<int> v3 = v; // O(n); to copy vector v; any changes in either v or v3 will not affecr each other
+    cout<<v[0]<<" "<<v.at(0);
 }
